@@ -323,6 +323,9 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="6" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
+        <MediaCodec name="OMX.qcom.audio.decoder.aac" type="audio/mp4a-latm" >
+            <Quirk name="requires-global-flush" />
+        </MediaCodec>
         <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
     </Decoders>
     <Include href="media_codecs_google_video.xml" />
