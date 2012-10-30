@@ -92,14 +92,14 @@
             <Limit name="measured-frame-rate-320x240" range="53-106" />
             <Limit name="measured-frame-rate-720x480" range="239-239" />
             <Limit name="measured-frame-rate-1280x720" range="197-197" />
-            <Limit name="measured-frame-rate-1920x1088" range="88-88" />
+            <Limit name="measured-frame-rate-1920x1080" range="88-88" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.hevc" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="58-116" />
             <Limit name="measured-frame-rate-640x360" range="57-100" />
             <Limit name="measured-frame-rate-720x480" range="50-100" />
             <Limit name="measured-frame-rate-1280x720" range="241-241" />
-            <Limit name="measured-frame-rate-1920x1088" range="90-100" />
+            <Limit name="measured-frame-rate-1920x1080" range="90-100" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.h263" type="video/3gpp" update="true">
             <Limit name="measured-frame-rate-176x144" range="58-110" />
