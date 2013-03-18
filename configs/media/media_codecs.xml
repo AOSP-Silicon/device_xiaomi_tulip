@@ -184,6 +184,17 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
     </Encoders>
     <Decoders>
+        <!-- DOLBY_UDC -->
+        <MediaCodec name="OMX.dolby.ac3.decoder" type="audio/ac3" >
+            <Quirk name="needs-flush-before-disable" />
+            <Quirk name="requires-flush-complete-emulation" />
+        </MediaCodec>
+        <MediaCodec name="OMX.dolby.ec3.decoder" type="audio/eac3" >
+            <Quirk name="needs-flush-before-disable" />
+            <Quirk name="requires-flush-complete-emulation" />
+        </MediaCodec>
+        <!-- DOLBY_UDC END -->
+
         <!-- Video Hardware  -->
         <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
