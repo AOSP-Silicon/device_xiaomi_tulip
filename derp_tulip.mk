@@ -37,9 +37,9 @@ PRODUCT_SYSTEM_NAME := tulip
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 # Override default Build Fingerprint and Description
-BUILD_FINGERPRINT := xiaomi/tulip/tulip:$(PLATFORM_VERSION)/$(BUILD_ID)/$(shell date -u +%s):user/release-keys
+BUILD_FINGERPRINT := xiaomi/tulip/tulip:$(PLATFORM_VERSION)/$(BUILD_ID)/$$(date -u +%s):user/release-keys
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_VERSION_TAGS=release-keys \
     TARGET_BUILD_FLAVOR=tulip-user \
     TARGET_BUILD_TYPE=user \
-    PRIVATE_BUILD_DESC="tulip-user $(PLATFORM_VERSION) $(BUILD_ID) $(shell date -u +%s) release-keys"
+    PRIVATE_BUILD_DESC="tulip-user $(PLATFORM_VERSION) $(BUILD_ID) $$(date -u +%s) release-keys"
