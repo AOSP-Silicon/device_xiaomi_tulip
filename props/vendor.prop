@@ -221,6 +221,7 @@ ro.telephony.default_network=22,22
 ro.vendor.use_data_netmgrd=true
 
 # Sensor
+persist.vendor.sensor.hw.binder.size=8
 ro.vendor.sdk.sensors.gestures=false
 ro.vendor.sensors.cmc=false
 ro.vendor.sensors.facing=false
