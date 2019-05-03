@@ -234,6 +234,9 @@ ro.vendor.sensors.mot_detect=true
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=Snapdragon 636
 
+# SurfaceFlinger
+ro.surface_flinger.protected_contents=true
+
 # System
 persist.sys.binary_xml=false
 
