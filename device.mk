@@ -295,6 +295,7 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_PACKAGES += \
     init.qcom.rc \
+    init.device.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \

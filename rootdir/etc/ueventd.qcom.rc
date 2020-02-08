@@ -410,6 +410,3 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # KGSL
 /sys/class/kgsl/kgsl-3d0    perfcounter              0660    root    shell
-
-# Charger
-/sys/class/power_supply/battery	input_suspend	0660	system	system

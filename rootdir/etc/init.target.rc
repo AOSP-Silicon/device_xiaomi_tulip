@@ -52,14 +52,6 @@ on post-fs
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
-on late-init
-    # Start services for bootanim
-    start surfaceflinger
-    start bootanim
-    start vendor.hwcomposer-2-1
-    start vendor.configstore-hal
-    start vendor.gralloc-2-0
-
 on post-fs-data
     mkdir /data/tombstones/modem 0771 system system
     mkdir /data/tombstones/lpass 0771 system system
@@ -88,46 +80,6 @@ on boot
     chown system system /persist/speccfg/vendor_persist.prop
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
-
-    # Camera
-    chmod 0660 /sys/android_camera/sensor
-    chown system system /sys/android_camera/sensor
-
-    # Flash
-    chmod 0660 /sys/class/leds/led:flash_0/brightness
-    chmod 0660 /sys/class/leds/led:flash_1/brightness
-    chmod 0660 /sys/class/leds/led:flash_2/brightness
-    chmod 0660 /sys/class/leds/led:torch_0/brightness
-    chmod 0660 /sys/class/leds/led:torch_1/brightness
-    chmod 0660 /sys/class/leds/led:torch_2/brightness
-    chmod 0660 /sys/class/leds/led:switch_0/brightness
-    chmod 0660 /sys/class/leds/led:switch_1/brightness
-    chmod 0660 /sys/class/leds/flashlight/brightness
-    chown system system /sys/class/leds/led:flash_0/brightness
-    chown system system /sys/class/leds/led:flash_1/brightness
-    chown system system /sys/class/leds/led:flash_2/brightness
-    chown system system /sys/class/leds/led:torch_0/brightness
-    chown system system /sys/class/leds/led:torch_1/brightness
-    chown system system /sys/class/leds/led:torch_2/brightness
-    chown system system /sys/class/leds/led:switch_0/brightness
-    chown system system /sys/class/leds/led:switch_1/brightness
-    chown system system /sys/class/leds/flashlight/brightness
-
-    # Thermal
-    chmod 0770 /sys/class/power_supply/battery/device/thermalcall
-    chown system system /sys/class/power_supply/battery/device/thermalcall
-
-    # Kcal
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
-    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_enable
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
-    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
-    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_sat
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
-    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
-    chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
@@ -232,32 +184,6 @@ service ppd /system/vendor/bin/mm-pp-dpps
     socket pps stream 0660 system system
     disabled
 
-on property:sys.boot_completed=1
-    # Enable PowerHAL hint processing
-    setprop vendor.powerhal.init 1
-    # Enable ZRAM on boot_complete
-    write /sys/block/zram0/comp_algorithm zstd
-    write /sys/block/zram0/use_dedup 1
-    write /proc/sys/vm/page-cluster 0
-    write /proc/sys/vm/swappiness 100
-    swapon_all /vendor/etc/fstab.zram
-    # Stop bootanimation
-    stop bootanim
-    # STOP EATING MY BATTERY AFTER 100H OF UPTIME FUCK YOU
-    stop statsd
-
-    # write caching
-    # Tell the kernel to use up to 99% of the RAM as cache for writes
-    # and instruct kernel to use up to 50% of RAM before slowing down
-    # the process that's writing.
-    write /proc/sys/vm/dirty_ratio 99
-    write /proc/sys/vm/dirty_background_ratio 50
-
-    # Tell that 10 minutes write delay is ok to even start writing
-    # stuff on the disk (ten minutes = 60000; 1 hour 360000).
-    write /proc/sys/vm/dirty_expire_centisecs 60000
-    write /proc/sys/vm/dirty_writeback_centisecs 60000
-    
 on property:init.svc.surfaceflinger=stopped
     stop ppd
 
@@ -282,13 +208,8 @@ on charger
     setprop vendor.usb.controller a800000.dwc3
     setprop sys.usb.configfs 1
     start vendor.power_off_alarm
-    write /sys/class/leds/white/brightness 255
 
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
      class main
      user root
      group system wakelock
-
-# Workaround for camera HAL can not read sys property
-on property:sys.camera.face.unlock=*
-    setprop vendor.camera.face.unlock ${sys.camera.face.unlock}
