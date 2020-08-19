@@ -252,6 +252,10 @@ PRODUCT_COPY_FILES += \
 # GrapheneOS Camera
 PRODUCT_PACKAGES += GrapheneCamera
 
+# HDR tonemapping configuration file
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml
+
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl:64 \
