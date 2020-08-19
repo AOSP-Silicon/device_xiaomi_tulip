@@ -142,6 +142,7 @@ dev.pm.dyn_samplingrate=1
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=1
 ro.vendor.display.cabl=0
+ro.vendor.display.hdr.config=/vendor/etc/hdr_tm_config.xml
 vendor.display.disable_metadata_dynamic_fps=1
 vendor.display.disable_partial_split=1
 vendor.display.disable_rotator_downscale=1
