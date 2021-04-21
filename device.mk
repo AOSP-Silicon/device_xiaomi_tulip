@@ -303,7 +303,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors.sh
 
 PRODUCT_PACKAGES += \
-    init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
