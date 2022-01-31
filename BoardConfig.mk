@@ -10,6 +10,9 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 DEVICE_PATH := device/xiaomi/tulip
 
+# Asserts
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
