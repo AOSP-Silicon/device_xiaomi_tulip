@@ -33,7 +33,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/qcom-caf/common/libqti-perfd-client
+    hardware/qcom-caf/common/libqti-perfd-client \
+    hardware/xiaomi
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -332,7 +333,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.tulip
+    android.hardware.light-service.xiaomi
 
 # Lineage Health
 PRODUCT_PACKAGES += \
