@@ -650,4 +650,7 @@
 
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">true</bool>
+
+    <!-- This config is ued to determine whether animations are allowed in low power mode. -->
+    <bool name="config_allowAnimationsInLowPowerMode">true</bool>
 </resources>
