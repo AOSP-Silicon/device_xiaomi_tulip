@@ -1,7 +1,6 @@
 runtime_resource_overlay {
     name: "TulipNoCutoutOverlay",
     theme: "DisplayNoCutoutOverlay",
-    sdk_version: "current",
     product_specific: true,
     overrides: ["NoCutoutOverlay"]
 }

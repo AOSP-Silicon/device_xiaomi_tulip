@@ -7,6 +7,5 @@
 runtime_resource_overlay {
     name: "ApertureOverlay",
     theme: "ApertureOverlay",
-    sdk_version: "current",
     product_specific: true
 }
