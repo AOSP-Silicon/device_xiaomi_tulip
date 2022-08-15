@@ -58,7 +58,7 @@ on late-init
     start bootanim
     start vendor.hwcomposer-2-1
     start vendor.configstore-hal
-    start vendor.gralloc-2-0
+    start vendor.qti.hardware.display.allocator
 
 on post-fs-data
     mkdir /data/tombstones/modem 0771 system system
