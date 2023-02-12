@@ -7,4 +7,8 @@
 
     <!-- Default values for LiveDisplay -->
     <bool name="config_enableLiveDisplay">false</bool>
+
+    <!-- Does the battery LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">false</bool>
 </resources>
