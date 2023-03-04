@@ -19,3 +19,6 @@ bluetooth.profile.sap.server.enabled=true
 
 # DPM
 persist.vendor.dpm.feature=11
+
+# Telephony
+ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
