@@ -121,7 +121,6 @@ dalvik.vm.minidebuginfo=false
 dalvik.vm.dex2oat-minidebuginfo=false
 
 # Display
-debug.cpurend.vsync=false
 debug.egl.hw=1
 debug.hwui.skia_atrace_enabled=false
 debug.sf.disable_client_composition_cache=1
