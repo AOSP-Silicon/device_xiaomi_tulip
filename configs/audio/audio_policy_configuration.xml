@@ -321,8 +321,6 @@
                        sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,hifi_playback"/>
                 <route type="mix" sink="USB Headset Out"
                        sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,hifi_playback"/>
-                <route type="mix" sink="Telephony Tx"
-                       sources="voice_tx"/>
                 <route type="mix" sink="voice_rx"
                        sources="Telephony Rx"/>
                 <route type="mix" sink="primary input"
