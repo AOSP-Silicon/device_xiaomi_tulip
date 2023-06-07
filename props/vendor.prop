@@ -242,6 +242,11 @@ ro.soc.model=Snapdragon 636
 # SurfaceFlinger
 ro.surface_flinger.protected_contents=true
 
+# Suspend properties
+suspend.short_suspend_threshold_millis=2000
+suspend.max_sleep_time_millis=40000
+suspend.short_suspend_backoff_enabled=true
+
 # System
 persist.sys.binary_xml=false
 
