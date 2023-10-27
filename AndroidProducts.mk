@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_tulip.mk
+    $(LOCAL_DIR)/octavi_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_tulip-user \
-    derp_tulip-userdebug \
-    derp_tulip-eng
+    octavi_tulip-user \
+    octavi_tulip-userdebug \
+    octavi_tulip-eng
