@@ -41,3 +41,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_BUILD_FLAVOR=tulip-user \
     TARGET_BUILD_TYPE=user \
     PRIVATE_BUILD_DESC="tulip-user $(PLATFORM_VERSION) $(BUILD_ID) $(shell date -u +%s) release-keys"
+
+# Spoof fingerprint for Google Play Services and SafetyNet
+PRODUCT_OVERRIDE_GMS_FINGERPRINT := "xiaomi/tulip/tulip:8.1.0/OPM1.171019.011/V10.2.2.0.OEKMIXM:user/release-keys"
