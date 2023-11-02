@@ -94,6 +94,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libhidltransport.so" "libhidlbase.so" "${2}"
             "${PATCHELF}" --remove-needed "libhwbinder.so" "${2}"
             ;;
+        vendor/lib64/com.fingerprints.extension@1.0.so|vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so)
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            ;;
     esac
 }
 
