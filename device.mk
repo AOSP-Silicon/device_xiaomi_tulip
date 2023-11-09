@@ -196,6 +196,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/display/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml \
     $(DEVICE_PATH)/configs/display/ad_calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ad_calib.cfg
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += Launcher3QuickStep Settings SystemUI
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
