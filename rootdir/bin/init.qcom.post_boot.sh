@@ -476,13 +476,15 @@ else
           "321" | "341" | "292" | "319" | "246" | "291" | "305" | "312")
             ;;
           *)
-            #Set PPR parameters for all other targets.
-            echo 360 > /sys/module/process_reclaim/parameters/min_score_adj
-            echo 0 > /sys/module/process_reclaim/parameters/enable_process_reclaim
-            echo 50 > /sys/module/process_reclaim/parameters/pressure_min
-            echo 70 > /sys/module/process_reclaim/parameters/pressure_max
-            echo 30 > /sys/module/process_reclaim/parameters/swap_opt_eff
-            echo 512 > /sys/module/process_reclaim/parameters/per_swap_size
+            #Set PRLMK parameters for all other targets.
+	    echo 16 > /sys/module/process_reclaim/parameters/free_swap_limit
+	    echo 16000 > /sys/module/process_reclaim/parameters/free_file_limit
+	    echo 500 > /sys/module/process_reclaim/parameters/min_score_adj
+	    echo 40 > /sys/module/process_reclaim/parameters/pressure_min
+	    echo 50 > /sys/module/process_reclaim/parameters/pressure_max
+	    echo 3 > /sys/module/process_reclaim/parameters/swap_eff_win
+	    echo 99 > /sys/module/process_reclaim/parameters/swap_opt_eff
+	    echo 1024 > /sys/module/process_reclaim/parameters/per_swap_size
             ;;
         esac
     fi
