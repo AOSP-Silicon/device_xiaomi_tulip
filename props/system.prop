@@ -13,6 +13,9 @@ dalvik.vm.dex2oat64.enabled=true
 # Dex2oat
 ro.sys.fw.dex2oat_thread_count=8
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
