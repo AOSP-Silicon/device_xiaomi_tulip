@@ -31,6 +31,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # GMS
 WITH_GMS := true
 
+# Exclude AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Device Info
 PRODUCT_NAME := lineage_tulip
 PRODUCT_DEVICE := tulip
