@@ -674,7 +674,7 @@ vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
 
 # CNE - from m690-user 11 RKQ1.210607.001 00WW_3_440 release-keys
-vendor/app/CneApp/CneApp.apk|13bdf6ba5637d3df3d6d9fb0017f9f56ddc620e7
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|13bdf6ba5637d3df3d6d9fb0017f9f56ddc620e7
 vendor/app/IWlanService/IWlanService.apk|a189d8879b4cf5026db2d6a80abb3a1319e38f0c
 vendor/bin/cnd|07829b294562037b779a6e7244972d7c24e758a5
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
