@@ -355,10 +355,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePkgs
-
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
