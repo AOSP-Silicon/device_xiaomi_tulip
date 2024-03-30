@@ -473,7 +473,7 @@ PRODUCT_PACKAGES += vndservicemanager
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service \
+    android.hardware.wifi@1.0-service \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
