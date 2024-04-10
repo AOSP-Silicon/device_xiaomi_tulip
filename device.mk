@@ -169,10 +169,8 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libtinyxml.vendor \
     libdisplayconfig \
-    libgralloc.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libqdMetaData.vendor
+    libgralloc \
+    libqdMetaData
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \

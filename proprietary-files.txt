@@ -737,6 +737,14 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lirc.sdm660.so|
 # ConsumerIR (spi) - from jasmine V11.0.28.0.QDIMIXM
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.spi.sdm660.so|d1f275a91557dfab52e82906986c5094fe078722
 
+# Display - from S62Pro
+system_ext/lib64/libdisplayconfig.qti.so|58705dbd1f63bf08b4b835d548d1c5c3957f63f9
+system_ext/lib64/libgralloc.qti.so|cb1bb32923a147c8c982dc50432fa75988e777eb
+system_ext/lib64/libqdMetaData.so|4a5af4a974e6baf73a1f9617c50763a3de428636
+vendor/lib64/libdisplayconfig.qti.so|4b0e5723345c6a315960a50b65f91839c1316659
+vendor/lib64/libgralloc.qti.so|3fbcb2ece2f7069f102891ce28406df8a4d914c0
+vendor/lib64/libqdMetaData.so|3b7ba7c474de65bcc35216a9eeb0ed502c58e156
+
 # DPM - from S62Pro
 system_ext/bin/dpmd|4662a11c5331919cc08d541a298444ffce18cc1b
 system_ext/etc/dpm/dpm.conf|0db01f277d3ba779abb2170aa798852f018ecd5a
