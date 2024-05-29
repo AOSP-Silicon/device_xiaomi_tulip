@@ -477,12 +477,11 @@ else
             ;;
           *)
             #Set PPR parameters for all other targets.
-            echo 360 > /sys/module/process_reclaim/parameters/min_score_adj
-            echo 0 > /sys/module/process_reclaim/parameters/enable_process_reclaim
-            echo 50 > /sys/module/process_reclaim/parameters/pressure_min
-            echo 70 > /sys/module/process_reclaim/parameters/pressure_max
-            echo 30 > /sys/module/process_reclaim/parameters/swap_opt_eff
-            echo 512 > /sys/module/process_reclaim/parameters/per_swap_size
+            echo 150 > /sys/module/process_reclaim/parameters/min_score_adj
+            echo 20 > /sys/module/process_reclaim/parameters/pressure_min
+            echo 40 > /sys/module/process_reclaim/parameters/pressure_max
+            echo 20 > /sys/module/process_reclaim/parameters/swap_opt_eff
+            echo 4096 > /sys/module/process_reclaim/parameters/per_swap_size
             ;;
         esac
     fi
