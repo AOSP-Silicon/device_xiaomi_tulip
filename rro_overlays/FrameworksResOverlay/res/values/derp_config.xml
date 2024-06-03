@@ -50,4 +50,8 @@
 
     <!-- Whether to cancel fingerprint operation if not idle -->
     <bool name="config_fpCancelIfNotIdle">true</bool>
+
+    <!-- Default value for QS_TRANSPARENCY -->
+    <integer name="config_qs_transparency">100</integer>
+
 </resources>
