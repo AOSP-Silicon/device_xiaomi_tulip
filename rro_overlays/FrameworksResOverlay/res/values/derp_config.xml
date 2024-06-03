@@ -54,4 +54,7 @@
     <!-- Default value for QS_TRANSPARENCY -->
     <integer name="config_qs_transparency">100</integer>
 
+    <!-- Whether allow to show charging remaining time -->
+    <bool name="config_show_charging_remaining_time">false</bool>
+
 </resources>
