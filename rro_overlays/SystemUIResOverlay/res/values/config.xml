@@ -25,4 +25,7 @@
 
     <!-- Threshold in micro watts above which a charger is rated as "fast"; 1.375 A @ 4.00 V = 5.50 W -->
     <integer name="config_chargingFastThreshold">5500000</integer>
+
+    <!-- Whether to use the split 2-column notification shade -->
+    <bool name="config_use_split_notification_shade">true</bool>
 </resources>
