@@ -638,7 +638,7 @@
     <bool name="config_swipe_up_gesture_default">true</bool>
 
     <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">1024</integer>
+    <integer name="config_customizedMaxCachedProcesses">256</integer>
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
