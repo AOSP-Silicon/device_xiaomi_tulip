@@ -89,7 +89,7 @@ ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_MSM_MPSS_SYMLINKS) \
     $(RFS_MSM_SLPI_SYMLINKS)
 
-EGL_LIBS := libEGL_adreno.so libGLESv2_adreno.so libq3dtools_adreno.so
+EGL_LIBS := eglSubDriverAndroid.so libEGL_adreno.so libGLESv1_CM_adreno.so libGLESv2_adreno.so libq3dtools_adreno.so libq3dtools_esx.so
 EGL_32_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/lib/,$(notdir $(EGL_LIBS)))
 $(EGL_32_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "EGL 32 lib link: $@"
