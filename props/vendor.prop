@@ -233,6 +233,7 @@ ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 
 # SF properties
+ro.surface_flinger.clear_slots_with_set_layer_buffer=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
 
