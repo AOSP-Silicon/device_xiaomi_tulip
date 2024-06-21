@@ -118,6 +118,7 @@ dalvik.vm.dex2oat-cpu-set=0,1,2,3
 dalvik.vm.dex2oat-threads=4
 dalvik.vm.minidebuginfo=false
 dalvik.vm.dex2oat-minidebuginfo=false
+dalvik.vm.usap_pool_enabled=true
 
 # Display
 debug.cpurend.vsync=false
