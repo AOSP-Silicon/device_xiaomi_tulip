@@ -254,7 +254,9 @@ persist.sys.binary_xml=false
 persist.vendor.delta_time.enable=true
 
 # USB
+vendor.usb.controller=a800000.dwc3
 vendor.usb.diag.func.name=diag
+vendor.usb.use_gadget_hal=1
 
 # Zygote
 zygote.critical_window.minute=10
