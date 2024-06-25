@@ -512,6 +512,9 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# Updater
+AB_OTA_UPDATER := false
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.basic
