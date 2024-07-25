@@ -1,0 +1,10 @@
+android_app_import {
+    name: "GrapheneCamera",
+    product_specific: true,
+
+    apk: "Camera.apk",
+    preprocessed: true,
+
+    optional_uses_libs: ["androidx.camera.extensions.impl"],
+    overrides: ["Aperture", "Camera", "Camera2", "Flash"],
+}
