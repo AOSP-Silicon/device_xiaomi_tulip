@@ -1,2 +1,2 @@
 #<src>               <mnt_point>    <type>    <mnt_flags>     <fs_mgr_flags>
-/dev/block/zram0      none           swap      defaults        zramsize=60%,zram_backingdev_size=1024M
+/dev/block/zram0      none           swap      defaults        zramsize=60%,zram_backingdev_size=512M
