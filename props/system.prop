@@ -13,6 +13,22 @@ dalvik.vm.dex2oat64.enabled=true
 # Dex2oat
 ro.sys.fw.dex2oat_thread_count=8
 
+# Media
+media.aac_51_output_enabled=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+vendor.mm.enable.qcom_parser=13631487
+vidc.enc.dcvs.extra-buff-count=2
+vidc.enc.target_support_bframe=1
+
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
