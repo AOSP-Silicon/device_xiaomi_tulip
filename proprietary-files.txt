@@ -1233,7 +1233,7 @@ vendor/lib64/libstreamparser.so|c4ee3b6372c38d9384779fd1eedf9d796d65fa70
 # Widevine - from jasmine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|2ad5f63e31a42a63d8d761dffc71d8c24151877d
-vendor/lib64/libwvhidl.so|38677623330ec145a62afdef110c713c9492671c
+vendor/lib64/libwvhidl.so|1b3e164bf4d4b30e9b70b706598cb1512aca4e21
 
 # Wifi - from jasmine V11.0.8.0.QDIMIXM
 vendor/bin/cnss-daemon|205c0fdd31b62349ecd34751ed90175ae6844d5a

@@ -209,6 +209,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor \
+    libcrypto_shim \
     libhidlmemory.vendor
 
 # Dynamic Partitions

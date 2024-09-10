@@ -89,6 +89,9 @@ function blob_fixup() {
 	vendor/bin/pm-service)
 	    grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
+        vendor/lib64/libwvhidl.so)
+            grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+            ;;
     esac
 }
 
