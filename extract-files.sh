@@ -84,6 +84,7 @@ function blob_fixup() {
             sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
             ;;
 	vendor/lib64/libwvhidl.so)
+            grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             "${PATCHELF}" --replace-needed libprotobuf-cpp-lite-3.9.1.so libprotobuf-cpp-full-3.9.1.so "${2}"
             ;;
 	vendor/bin/pm-service)
