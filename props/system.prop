@@ -48,7 +48,7 @@ persist.rcs.supported=1
 # Watchdog
 framework_watchdog.fatal_window.second=600
 framework_watchdog.fatal_count=3
-ro.hw_timeout_multiplier=12
+ro.hw_timeout_multiplier=3
 
 # Wifi Display
 media.wfd.max_resolution=5
