@@ -1219,6 +1219,12 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|a0d692fe10ef9dc447949
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e47baed52f1c0637de34fa55e45a86b4b412a672
 
+# Universal Bandwidth Compression (UBWC) - from LA.UM.10.2.1.r1-03400-sdm660
+vendor/lib/libUBWC.so|7269f5e1c914d36f995517c55632a6ae18229a9a
+vendor/lib/libstreamparser.so|3dacaede7656beaca862b995b88d3d8b40f50116
+vendor/lib64/libUBWC.so|0da520fc45ca290fc66d1878149b63e7e41ad0a3
+vendor/lib64/libstreamparser.so|c4ee3b6372c38d9384779fd1eedf9d796d65fa70
+
 # Widevine - from jasmine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|2ad5f63e31a42a63d8d761dffc71d8c24151877d
