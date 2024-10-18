@@ -1192,6 +1192,13 @@ vendor/lib64/libsensor_reg.so
 vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
 vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 
+# Server-Side Rendering (SSR) - from LA.UM.10.2.1.r1-03400-sdm660
+vendor/bin/ssr_diag|c5d42cf578f0eb26560b8d70282efb44112b7a8c
+vendor/bin/ssr_setup|7fe37856bcd4d308c66f09b3f167a1e84c04c40f
+vendor/bin/subsystem_ramdump|7f852bea217895e0f8191e92da8d114ba72e15ef
+vendor/lib/libsubsystem_control.so|da82bb63993a186c067de0ccd6ec0e165bb36a5e
+vendor/lib64/libsubsystem_control.so|3ae879485eedb7d1bc84a47ddef474608ddb4d3e
+
 # Soter - from jason V12.0.1.0.PCHCNXM
 app/SoterService/SoterService.apk|c6c6063f83588db6c572779624458a4d1f094213
 
