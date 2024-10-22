@@ -775,6 +775,9 @@ vendor/lib64/libsdedrm.so|2add69c575f5745d0db2bbe8dfb7f75f9dc03ce6
 vendor/lib64/libsecureui_svcsock.so|889d4a12c5dee56ed4b10548abbd7b9033cbdad2
 vendor/lib64/libssd.so|a64337d8044607b81adcf7e8c5760cf8cdcf82b4
 
+# DRM - from husky-user-15-AP3A.241105.005-12444471-release-keys
+vendor/lib64/liboemcrypto.so|0bcf581f1dcc48aed22146e9bbc2498767127700
+
 # Fingerprint firmware
 etc/firmware/goodixfp.b00
 etc/firmware/goodixfp.b01
