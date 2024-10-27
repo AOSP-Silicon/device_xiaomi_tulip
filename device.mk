@@ -210,6 +210,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor \
     libcrypto_shim \
+    libcrypto_shim.vendor \
     libhidlmemory.vendor
 
 # Dynamic Partitions
