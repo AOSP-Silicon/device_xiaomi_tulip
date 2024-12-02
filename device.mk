@@ -300,7 +300,8 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.usb.sh \
-    
+    init.qcom.sensors.sh
+
 PRODUCT_PACKAGES += \
     init.msm.usb.configfs.rc \
     init.qcom.rc \

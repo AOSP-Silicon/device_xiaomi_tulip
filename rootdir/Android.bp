@@ -56,6 +56,12 @@ sh_binary {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.qcom.sensors.sh",
+    src: "bin/init.qcom.sensors.sh",
+    vendor: true,
+}
+
 // Init configuration files
 prebuilt_etc {
     name: "init.msm.usb.configfs.rc",

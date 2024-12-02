@@ -33,10 +33,12 @@
 baseband=`getprop ro.baseband`
 sgltecsfb=`getprop persist.vendor.radio.sglte_csfb`
 datamode=`getprop persist.vendor.data.mode`
+low_ram=`getprop ro.config.low_ram`
 
 case "$baseband" in
     "apq" | "sda" | "qcs" )
     setprop ro.vendor.radio.noril yes
+    stop vendor.ril-daemon
     stop vendor.qcrild
 esac
 
@@ -46,8 +48,13 @@ case "$baseband" in
     start vendor.qcrild
 
     case "$baseband" in
+        "svlte2a" | "csfb")
+          start qmiproxy
+        ;;
         "sglte" | "sglte2" )
-          if [ "x$sgltecsfb" = "xtrue" ]; then
+          if [ "x$sgltecsfb" != "xtrue" ]; then
+              start qmiproxy
+          else
               setprop persist.vendor.radio.voice.modem.index 0
           fi
         ;;
@@ -65,11 +72,15 @@ case "$baseband" in
     case "$datamode" in
         "tethered")
             start vendor.dataqti
-            start vendor.dataadpl
+            if [ "$low_ram" != "true" ]; then
+              start vendor.dataadpl
+            fi
             ;;
         "concurrent")
             start vendor.dataqti
-            start vendor.dataadpl
+            if [ "$low_ram" != "true" ]; then
+              start vendor.dataadpl
+            fi
             ;;
         *)
             ;;
