@@ -92,6 +92,10 @@ function blob_fixup() {
         vendor/lib64/libwvhidl.so)
             grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.drm@1.2-service.widevine)
+            "${PATCHELF}" --replace-needed "libhidltransport.so" "libhidlbase.so" "${2}"
+            "${PATCHELF}" --remove-needed "libhwbinder.so" "${2}"
+            ;;
     esac
 }
 
