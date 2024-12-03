@@ -1214,7 +1214,7 @@ vendor/lib64/libUBWC.so|0da520fc45ca290fc66d1878149b63e7e41ad0a3
 vendor/lib64/libstreamparser.so|c4ee3b6372c38d9384779fd1eedf9d796d65fa70
 
 # Widevine - from jasmine
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1cdda8a2fed3e3e533d51cf70f406597825215c2
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|2ad5f63e31a42a63d8d761dffc71d8c24151877d
 vendor/lib64/libwvhidl.so|1b3e164bf4d4b30e9b70b706598cb1512aca4e21
 

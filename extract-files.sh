@@ -90,6 +90,10 @@ function blob_fixup() {
 	vendor/bin/pm-service)
 	    grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.drm@1.2-service.widevine)
+            "${PATCHELF}" --replace-needed "libhidltransport.so" "libhidlbase.so" "${2}"
+            "${PATCHELF}" --remove-needed "libhwbinder.so" "${2}"
+            ;;
     esac
 }
 
