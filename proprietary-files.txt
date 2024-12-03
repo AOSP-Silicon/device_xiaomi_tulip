@@ -1012,6 +1012,10 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|f2b57130987c65a1dc596bf83a2b09e086df9286
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|74675e4f720d75db031a0db4ca21463ebd331f34
 
+# Protobuf - from S62Pro
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so|025219e99ea020c524914cba98ffebfc7a26c8a8
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so|a946f162883a8c1b1ccecc602f00b56360fd8a81
+
 # QMI - from S62Pro
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
