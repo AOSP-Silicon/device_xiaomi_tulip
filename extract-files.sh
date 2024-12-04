@@ -80,6 +80,12 @@ function blob_fixup() {
             "${PATCHELF}" --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
             sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${2}"
             ;;
+        vendor/lib/libmmcamera_bokeh.so | proprietary/vendor/lib/libmmcamera_ppeiscore.so)
+            "${PATCHELF}" --replace-needed libqdMetaData.so libqdMetaData.vendor.so "${2}"
+            ;;
+        vendor/lib/libCB.so | vendor/lib64/libCB.so)
+            "${PATCHELF}" --replace-needed libgralloc.qti.so libgralloc.vendor.qti.so "${2}"
+            ;;
     esac
 }
 

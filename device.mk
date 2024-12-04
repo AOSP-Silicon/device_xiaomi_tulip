@@ -175,10 +175,8 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libtinyxml \
     libtinyxml.vendor \
-    libdisplayconfig \
-    libgralloc.qti \
-    libqdMetaData \
-    libqdMetaData.system \
+    libdisplayconfig.vendor.qti \
+    libgralloc.vendor.qti \
     libqdMetaData.vendor
 
 PRODUCT_PACKAGES += \
