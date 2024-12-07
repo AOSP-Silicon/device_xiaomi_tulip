@@ -475,6 +475,7 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim \
+    libgui_shim \
     libpiex_shim
 
 # Thermal
