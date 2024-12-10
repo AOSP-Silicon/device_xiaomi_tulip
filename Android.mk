@@ -141,4 +141,14 @@ super_dummyimage: $(INSTALLED_SUPERIMAGE_DUMMY_TARGET)
 
 INSTALLED_RADIOIMAGE_TARGET += $(INSTALLED_SUPERIMAGE_DUMMY_TARGET)
 
+DISPLAY_LIBS := libgralloc.qti.so libqdMetaData.so
+DISPLAY_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT)/lib64/,$(notdir $(DISPLAY_LIBS)))
+$(DISPLAY_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Display lib link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /vendor/lib64/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(DISPLAY_SYMLINKS)
+
 endif

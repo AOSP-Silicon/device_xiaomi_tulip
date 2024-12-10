@@ -174,8 +174,7 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libtinyxml \
     libdisplayconfig \
-    libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
