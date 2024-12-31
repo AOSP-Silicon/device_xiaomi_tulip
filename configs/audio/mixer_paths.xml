@@ -2362,6 +2362,10 @@
     <path name="true-native-mode">
     </path>
 
+    <path name="hph-lowpower-mode">
+	    <ctl name="RX HPH Mode" value="CLS_H_LP" />
+    </path>
+
     <path name="line">
         <path name="headphones" />
     </path>
