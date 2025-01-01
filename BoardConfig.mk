@@ -81,9 +81,6 @@ AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
 BOARD_EGL_CFG := $(DEVICE_PATH)/configs/egl/egl.cfg
 BOARD_USES_ADRENO := true
 TARGET_SCREEN_DENSITY := 440
-TARGET_USES_HWC2 := true
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_ION := true
 
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
@@ -113,6 +110,9 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_tulip
 TARGET_RECOVERY_DEVICE_MODULES := libinit_tulip
+
+# Media
+TARGET_USES_ION := true
 
 # Partitions
 SSI_PARTITIONS := product system system_ext
