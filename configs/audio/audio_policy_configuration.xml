@@ -358,8 +358,11 @@
         <!-- Remote Submix Audio HAL -->
         <xi:include href="/vendor/etc/r_submix_audio_policy_configuration.xml"/>
 
-        <!-- Bluetooth Audio HAL -->
-        <xi:include href="/vendor/etc/bluetooth_audio_policy_configuration_7_0.xml"/>
+	<!-- Hearing aid Audio HAL -->
+        <xi:include href="/vendor/etc/hearing_aid_audio_policy_configuration_7_0.xml"/>
+
+	<!-- Le Audio HAL -->
+	<xi:include href="/vendor/etc/bluetooth_with_le_audio_policy_configuration_7_0.xml"/>
 
     </modules>
     <!-- End of Modules section -->
