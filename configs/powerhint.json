@@ -125,15 +125,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneSchedBoost",
-      "Path": "/dev/stune/top-app/schedtune.sched_boost",
-      "Values": [
-        "15",
-        "10"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "ForegroundCpuset",
       "Path": "/dev/cpuset/foreground/cpus",
       "Values": [
@@ -313,12 +304,6 @@
     {
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
-      "Duration": 0,
-      "Value": "15"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneSchedBoost",
       "Duration": 0,
       "Value": "15"
     },
