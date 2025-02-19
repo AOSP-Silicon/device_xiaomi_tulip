@@ -107,15 +107,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "SchedBoost",
-      "Path": "/proc/sys/kernel/sched_boost",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
@@ -306,12 +297,6 @@
       "Node": "TASchedtuneBoost",
       "Duration": 0,
       "Value": "15"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "SchedBoost",
-      "Duration": 5000,
-      "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
