@@ -604,6 +604,7 @@
      
     <!-- The list of components which should be automatically disabled for a specific device. -->
     <string-array name="config_deviceDisabledComponents" translatable="false">
+        com.google.android.safetycore
     </string-array>
 
     <!-- Delay that allows some content to arrive at the display before switching
