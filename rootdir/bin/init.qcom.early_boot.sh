@@ -456,3 +456,7 @@ fi
 # Workaround for cache
 rm -rR /data/resource-cache
 rm -rR /data/system/package_cache
+
+# Disable unwanted apps
+pm disable com.google.android.contactkeys
+pm disable com.google.android.safetycore
