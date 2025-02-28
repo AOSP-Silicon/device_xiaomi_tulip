@@ -328,9 +328,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor
 
-# Lights
+# Light
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.tulip
+    android.hardware.light-service.tulip
 
 # Lineage Health
 PRODUCT_PACKAGES += \
