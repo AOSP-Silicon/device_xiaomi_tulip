@@ -4,7 +4,8 @@ subdirs = [
 soong_namespace {
     imports: [
         "hardware/google/interfaces",
-        "hardware/google/pixel"
+        "hardware/google/pixel",
+        "vendor/xiaomi/tulip"
     ],
 }
 
