@@ -17,6 +17,9 @@ $(call inherit-product, device/xiaomi/tulip/device.mk)
 # Basic Call Recorder
 BUILD_BCR := false
 
+# Pixel Gapps
+TARGET_USES_PICO_GAPPS := true
+
 # Device Info
 PRODUCT_NAME := lineage_tulip
 PRODUCT_DEVICE := tulip
