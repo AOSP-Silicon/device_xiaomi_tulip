@@ -1,0 +1,11 @@
+android_app_import {
+    name: "Metrolist",
+    product_specific: true,
+
+    apk: "Metrolist.apk",
+    preprocessed: true,
+    presigned: true,
+
+    optional_uses_libs: ["org.apache.http.legacy"],
+    overrides: ["Accord", "Gramophone", "Symphonica"],
+}
