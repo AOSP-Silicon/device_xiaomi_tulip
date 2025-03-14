@@ -20,6 +20,16 @@ BUILD_BCR := false
 # Pixel Gapps
 TARGET_USES_PICO_GAPPS := true
 
+ifeq ($(TARGET_USES_PICO_GAPPS),true)
+PRODUCT_PACKAGES += \
+    CalendarGooglePrebuilt \
+    FilesPrebuilt \
+    NgaResources \
+    Photos \
+    PrebuiltBugle \
+    Velvet
+endif
+
 # Device Info
 PRODUCT_NAME := lineage_tulip
 PRODUCT_DEVICE := tulip
