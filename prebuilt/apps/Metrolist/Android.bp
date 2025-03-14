@@ -1,11 +1,11 @@
 android_app_import {
-    name: "Gramophone",
+    name: "Metrolist",
     product_specific: true,
 
-    apk: "Gramophone.apk",
+    apk: "Metrolist.apk",
     preprocessed: true,
     presigned: true,
 
     optional_uses_libs: ["androidx.window.extensions", "androidx.window.sidecar"],
-    overrides: ["Accord", "Symphonica"],
+    overrides: ["Accord", "Gramophone", "Symphonica"],
 }
