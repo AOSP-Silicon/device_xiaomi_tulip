@@ -366,7 +366,7 @@ PRODUCT_COPY_FILES += \
 
 # Music Player
 PRODUCT_PACKAGES += \
-    Gramophone
+    Metrolist
 
 # Network
 PRODUCT_PACKAGES += \
