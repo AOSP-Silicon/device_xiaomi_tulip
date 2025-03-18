@@ -23,7 +23,7 @@
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq",
       "Values": [
-        "9999999"
+        "9999999",
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -139,7 +139,7 @@
       "Path": "/dev/cpuset/foreground/cpus",
       "Values": [
         "0-5",
-        "0-6"
+        "0-5,7"
       ],
       "ResetOnInit": true
     },
