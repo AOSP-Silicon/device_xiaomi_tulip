@@ -2,8 +2,8 @@ android_app_import {
     name: "Metrolist",
     product_specific: true,
 
-    apk: "Metrolist.apk",
-    presigned: true,
+    apk: "Metrolist-unsigned.apk",
+    certificate: "releasekey",
 
     optional_uses_libs: ["org.apache.http.legacy"],
     overrides: ["Accord", "Gramophone", "Symphonica"],
