@@ -43,7 +43,6 @@ vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
 
 # ANT+ - from jasmine
--lib/libantradio.so:system_ext/lib/libantradio.so|37c36369eeab19d5e6266d9d25ae0de9bb59502d
 -lib64/libantradio.so:system_ext/lib64/libantradio.so|43f6105678c082216f1606d8dd43fa1b0b753d7e
 product/lib64/com.qualcomm.qti.ant@1.0.so:system_ext/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|181a8ab9b1d40705d3151821b53732c5566a2848
@@ -220,6 +219,7 @@ vendor/lib/libsymphonypower.so|761b232ef920670498ff73627a3c0ebeaa9a5e79
 vendor/lib/libvideoutils.so|16d906b0f53d67a33942815df51397a6d4ca619c
 vendor/lib/libvidhance.so|f349298e31d45fa45dd5bd47c8c8447639f919c2
 vendor/lib/libvidhance_gyro.so|004ce84d7fe481cee7f6416b60ac0e184974d9d1
+vendor/lib64/libvideoutils.so|42ffbcce5e16eacbb089fc6ae27af8e1a66284f3
 
 # Camera - libmmcamera tulip - from tulip V10.3.6.0.PEKMIXM
 vendor/lib/libmmcamera_tulip_ov02a10_ofilm_ii.so|53085c54a4fc874f53a7f60d54f3c364ad5a8026
@@ -859,7 +859,6 @@ vendor/lib/egl/libq3dtools_esx.so|2c090867e06c588bd1422788fec03c6948890af2
 vendor/lib/libC2D2.so|a89c611c33d136ac335f8ab077a4dd9ab16722a6
 vendor/lib/libCB.so|0898dd259d51c3a1e3416a4d9e17151c9e23677e
 vendor/lib/libOpenCL.so|df83abbc452249d07b52bf67c1c9b537c76019af
-vendor/lib/libRSDriver_adreno.so|9c596bbda0ce022143a037c9d0eddf9aadab8533
 vendor/lib/libadreno_utils.so|de54930ce9fc6e13de930aa7a942967828fe4daf
 vendor/lib/libbccQTI.so|3e0a4fe0242a797a19a70b282fe0cf0bd1ce75da
 vendor/lib/libc2d30_bltlib.so|0ecaba6ce84154d88c0df57a235609ecd98d6f6d
@@ -876,7 +875,6 @@ vendor/lib64/egl/libq3dtools_esx.so|1ebe058338f24e1b701a3ff50c28812f90e6ebed
 vendor/lib64/libC2D2.so|ce0aceb5116cea71454c5313f661c5d042eeb218
 vendor/lib64/libCB.so|a0fdbd4c992698a8eb7bdc75487ce16d390c70c2
 vendor/lib64/libOpenCL.so|21897637e702c4a97eb748934e9f1fc8880881c5
-vendor/lib64/libRSDriver_adreno.so|d6d85a5af4f82e3a64bda4929ab4ed8bde6b7a3d
 vendor/lib64/libadreno_utils.so|a732da174c5f9714e494882cc6a1984548492757
 vendor/lib64/libbccQTI.so|d4732f569f53d0152bcb824d94819c7b183a7a8b
 vendor/lib64/libc2d30_bltlib.so|254b4b60fe1795188628ab4d156b9656af79c776
@@ -1022,6 +1020,7 @@ vendor/lib/libqmi_client_qmux.so|f06bbe8ec8d1b6c10ca85522bf91515328424aa3
 vendor/lib/libqmi_common_so.so|d048a69188f6159868d3cbf6636dae8fa823137e
 vendor/lib/libqmi_csi.so|07083f60fb6f0b967c83b166bf1d2e2ae3beaf20
 vendor/lib/libqmi_encdec.so|db45b38dda5ce833029c1870c948dcabe36ad721
+vendor/lib/libqmi_legacy.so|7508cc700f75db2da644da2d9c802b588ab4a0e5
 vendor/lib/libqmiservices.so|ed6785cccaa6e01be1af7e7a8c8d696eeb78e05f
 vendor/lib64/libdiag.so|7afccc79d88106a624449a757b298653e55c2172
 vendor/lib64/libdsutils.so|17f87e351aa34cea83ca815875e4b459197066a3
@@ -1036,6 +1035,7 @@ vendor/lib64/libqmi_client_qmux.so|cb3fcabb2a92ac53f8df2962f2d2d5ff6f5a0ebb
 vendor/lib64/libqmi_common_so.so|d817b576a054dd91e8e4346d73e6d635d221bfde
 vendor/lib64/libqmi_csi.so|7e19c2266b7f63f3f9e69c039b1446acd460231b
 vendor/lib64/libqmi_encdec.so|a18bb21e5b9b53e3dc8dc45f6e7e65e32a467607
+vendor/lib64/libqmi_legacy.so|f324c6701ecf78ff50975c0bc7f99aea09cb3539
 vendor/lib64/libqmiservices.so|52770edf3e35f5376f3d0a131636f3213c9e59fa
 
 # Radio - from m690-user 11 RKQ1.210607.001 00WW_3_440 release-keys
@@ -1192,7 +1192,6 @@ vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 vendor/bin/ssr_diag|c5d42cf578f0eb26560b8d70282efb44112b7a8c
 vendor/bin/ssr_setup|7fe37856bcd4d308c66f09b3f167a1e84c04c40f
 vendor/bin/subsystem_ramdump|7f852bea217895e0f8191e92da8d114ba72e15ef
-vendor/lib/libsubsystem_control.so|da82bb63993a186c067de0ccd6ec0e165bb36a5e
 vendor/lib64/libsubsystem_control.so|3ae879485eedb7d1bc84a47ddef474608ddb4d3e
 
 # Soter - from jason V12.0.1.0.PCHCNXM
@@ -1227,6 +1226,10 @@ vendor/lib/libUBWC.so|7269f5e1c914d36f995517c55632a6ae18229a9a
 vendor/lib/libstreamparser.so|3dacaede7656beaca862b995b88d3d8b40f50116
 vendor/lib64/libUBWC.so|0da520fc45ca290fc66d1878149b63e7e41ad0a3
 vendor/lib64/libstreamparser.so|c4ee3b6372c38d9384779fd1eedf9d796d65fa70
+
+# WFD - from jasmine
+vendor/lib/libwfdcommonutils_proprietary.so|14df45871041125273609b6ddc507fa6901cb44d
+vendor/lib/libwfdmmservice.so|87f9c841031272e6a3713abd85326f84d2ae52e5
 
 # Widevine - from jasmine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
