@@ -128,7 +128,7 @@
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" acdb_id="293"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_ECHO" acdb_id="293"/>
         <device name="SND_DEVICE_IN_VOICE_RX" acdb_id="819"/>
-        <device name="SND_DEVICE_IN_VOICE_REC_MIC" acdb_id="4"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC" acdb_id="10003"/>
         <device name="SND_DEVICE_IN_CAPTURE_FM" acdb_id="0"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" acdb_id="102"/>
         <device name="SND_DEVICE_IN_MAIN_MIC" acdb_id="4"/>
