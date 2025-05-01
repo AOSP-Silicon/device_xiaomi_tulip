@@ -70,6 +70,9 @@ function blob_fixup() {
         system_ext/lib64/lib-imscamera.so | system_ext/lib64/lib-imsvideocodec.so)
             grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
 	    ;;
+        system_ext/lib64/libantradio.so)
+            grep -q "libnativehelper_shim.so" "${2}" || "${PATCHELF}" --add-needed "libnativehelper_shim.so" "${2}"
+            ;;
         vendor/bin/mlipayd@1.1)
            "${PATCHELF}" --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
             ;;

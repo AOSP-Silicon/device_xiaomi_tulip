@@ -485,6 +485,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim \
     libgui_shim \
+    libnativehelper_shim \
     libpiex_shim
 
 # Thermal
