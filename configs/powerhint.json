@@ -138,8 +138,8 @@
       "Name": "ForegroundCpuset",
       "Path": "/dev/cpuset/foreground/cpus",
       "Values": [
-        "0-5",
-        "0-5,7"
+        "0-3,6",
+        "0-3,6-7"
       ],
       "ResetOnInit": true
     },
@@ -333,7 +333,7 @@
       "PowerHint": "LAUNCH",
       "Node": "ForegroundCpuset",
       "Duration": 5000,
-      "Value": "0-5"
+      "Value": "0-3,6"
     },
     {
       "PowerHint": "LAUNCH",
